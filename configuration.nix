@@ -71,6 +71,11 @@
     rofi
   ];
 
+  # Fonts
+  fonts.packages = with pkgs; [
+    nerd-fonts.caskaydia-cove
+  ];
+
   # Firewall
   networking.firewall.enable = true;
   # networking.firewall.allowedTCPPorts = [ ... ];
