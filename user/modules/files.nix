@@ -1,8 +1,10 @@
 {
   home.file = {
-    ".config/hypr/hyprland.lua" = {
+    ".config/hypr/" = {
       enable = true;
-      source = ./hypr/hyprland.lua;
+      source = ./hypr;
+      recursive = true;
+      force = true;
     };
     ".config/waybar/" = {
       enable = true;
