@@ -1,0 +1,106 @@
+{
+    "margin-top": 5,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "custom/notification"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "{:%A, %d %B %Y}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "tooltip-format": "{volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        }
+    },
+
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "tooltip": true,
+        "tooltip-format": "{ifname}",
+        "tooltip-format-wifi": "Name: {essid}\nSignal strength: {signalStrength}%",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "kitty nmtui"
+    },
+
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "events": {
+            "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+            "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+            "on-charging-100": "notify-send -u normal 'Battery Full!'",
+            "on-discharging": "notify-send -u normal 'Power Switch' Discharging",
+            "on-charging": "notify-send -u normal 'Power Switch' Charging'"
+        },
+        "format": "{capacity}% {icon}",
+        "tooltip": true,
+        "tooltip-format": "{timeTo}",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
+
+    "custom/notification": {
+        "tooltip": true,
+        "format": "<span size='16pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    }
+}
