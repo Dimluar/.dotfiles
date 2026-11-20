@@ -16,5 +16,10 @@
       source = ./rofi;
       recursive = true;
     };
+    ".config/swaync/" = {
+      enable = true;
+      source = ./swaync;
+      recursive = true;
+    };
   };
 }

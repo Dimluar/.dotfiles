@@ -6,5 +6,6 @@
     ./git.nix
     ./kitty.nix
     ./zsh.nix
+    ./gtk.nix
   ];
 }
