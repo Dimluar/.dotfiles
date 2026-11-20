@@ -65,6 +65,7 @@
     librewolf
     wget
     git
+    brightnessctl
     waybar
     awww
     kitty
