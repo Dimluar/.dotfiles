@@ -17,14 +17,14 @@
     nixosConfigurations = {
       morrowind = lib.nixosSystem {
 	inherit system;
-        modules = [ ./configuration.nix ];
+        modules = [ ./system/configuration.nix ];
       };
     };
 
     homeConfigurations = {
       dimu = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	modules = [ ./home.nix ];
+	modules = [ ./user/home.nix ];
       };
     };
   };
