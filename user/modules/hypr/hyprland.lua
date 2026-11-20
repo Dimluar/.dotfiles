@@ -13,7 +13,7 @@ local browser	  = "librewolf"
 
 -- Autostart
 hl.on("hyprland.start", function () 
-  hl.exec_cmd("waybar & awww-daemon &")
+  hl.exec_cmd("waybar & awww-daemon & swaync &")
 end)
 
 -- Environment variables
@@ -134,6 +134,9 @@ hl.config({
         touchpad = {
             natural_scroll = false,
         },
+
+        -- Remap caps lock to ctrl
+        kb_options = "ctrl:nocaps",
     },
 })
 
