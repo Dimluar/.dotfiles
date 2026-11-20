@@ -9,5 +9,10 @@
       source = ./waybar;
       recursive = true;
     };
+    ".config/rofi/" = {
+      enable = true;
+      source = ./rofi;
+      recursive = true;
+    };
   };
 }
