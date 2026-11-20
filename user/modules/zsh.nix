@@ -8,6 +8,19 @@
             size = 1000;
         };
 
+        initContent = ''
+            function zle-keymap-select {
+                echo -ne '\e[1 q'
+            }
+
+            function zle-line-init {
+                echo -ne '\e[1 q'
+            }
+
+            zle -N zle-keymap-select
+            zle -N zle-line-init
+        '';
+
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
 
@@ -20,7 +33,7 @@
 
     programs.zsh.oh-my-zsh = {
         enable = true;
-        theme = "mh";
+        theme = "alanpeabody";
         plugins = [ "git" ];
     };
 }
