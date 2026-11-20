@@ -15,7 +15,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
   
   # Display manager
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      clear_password = true;
+    };
+  };
 
   # Define your hostname.
   networking.hostName = "morrowind";
