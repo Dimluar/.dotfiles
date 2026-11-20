@@ -66,6 +66,7 @@
     wget
     git
     brightnessctl
+    wl-clipboard
     waybar
     awww
     kitty
