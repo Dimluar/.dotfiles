@@ -5,5 +5,6 @@
     tree-sitter
     gcc
     gnumake
+    killall
   ];
 }

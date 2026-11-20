@@ -71,6 +71,8 @@
     awww
     kitty
     rofi
+    swaynotificationcenter
+    libnotify
   ];
 
   # Fonts
