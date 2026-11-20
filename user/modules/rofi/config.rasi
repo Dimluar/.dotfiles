@@ -6,13 +6,13 @@ configuration {
 }
 * {
   selected-active-foreground:  @background;
-  lightfg:                     @text;
+  lightfg:                     @mauve;
   separatorcolor:              @foreground;
   urgent-foreground:           @red;
   alternate-urgent-background: @lightbg;
   lightbg:                     @mantle;
   background-color:            transparent;
-  border-color:                @foreground;
+  border-color:                @mauve;
   normal-background:           @background;
   selected-urgent-background:  @red;
   alternate-active-background: @lightbg;
@@ -20,9 +20,9 @@ configuration {
   alternate-normal-foreground: @foreground;
   urgent-background:           @background;
   selected-normal-foreground:  @lightbg;
-  active-foreground:           @blue;
+  active-foreground:           @mauve;
   background:                  @base;
-  selected-active-background:  @blue;
+  selected-active-background:  @mauve;
   active-background:           @background;
   selected-normal-background:  @lightfg;
   alternate-normal-background: @lightbg;
@@ -30,7 +30,7 @@ configuration {
   selected-urgent-foreground:  @background;
   normal-foreground:           @foreground;
   alternate-urgent-foreground: @red;
-  alternate-active-foreground: @blue;
+  alternate-active-foreground: @mauve;
 }
 element {
     padding: 1px ;
