@@ -7,5 +7,6 @@
     gnumake
     killall
     zathura
+    telegram-desktop
   ];
 }
