@@ -6,5 +6,6 @@
     gcc
     gnumake
     killall
+    zathura
   ];
 }
