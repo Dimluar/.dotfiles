@@ -32,6 +32,7 @@ vim.diagnostic.config({
 -- Enabled languages
 local languages = {
   "lua_ls",
+  "ccls"
 }
 
 vim.lsp.enable(languages)

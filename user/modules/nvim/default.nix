@@ -4,6 +4,7 @@
     ripgrep
     tree-sitter
     lua-language-server
+    ccls
   ];
 
   programs.neovim = {
