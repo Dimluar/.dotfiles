@@ -4,7 +4,7 @@
   home.homeDirectory = "/home/dimu";
 
   # Modules
-  imports = [ ./modules/init.nix ];
+  imports = [ ./modules ];
 
   # Automatic upgrades
   services.home-manager.autoUpgrade = {
