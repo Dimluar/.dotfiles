@@ -1,9 +1,9 @@
 {
-    programs.rofi.enable = true;
+  programs.rofi.enable = true;
 
-    home.file.".config/rofi/" = {
-        enable    = true;
-        source    = ./rofi;
-        recursive = true;
-    };
+  home.file.".config/rofi/" = {
+    enable = true;
+    source = ./rofi;
+    recursive = true;
+  };
 }

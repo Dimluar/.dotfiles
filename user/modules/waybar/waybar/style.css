@@ -1,74 +1,74 @@
 @import "mocha.css";
 
 * {
-    border: none;
-    border-radius: 0px;
-    
-    font-family: "CaskaydiaCove Nerd Font Propo";
-    font-weight: bold;
-    font-size: 15px;
+  border: none;
+  border-radius: 0px;
 
-    min-height: 0;
-    padding: 0;
-    margin: 0;
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-weight: bold;
+  font-size: 15px;
+
+  min-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 window#waybar {
-    background: transparent;
+  background: transparent;
 }
 
 tooltip {
-    background: @base;
-    border: 1px solid @surface2;
-    border-radius: 12px;
+  background: @base;
+  border: 1px solid @surface2;
+  border-radius: 12px;
 }
 
 tooltip label {
-    color: @text;
-    padding: 6px;
+  color: @text;
+  padding: 6px;
 }
 
 #workspaces {
-    background-color: @base;
-    padding: 5px 3px;
-    margin: 0 0 0 12px;
-    border-radius: 18px;
-    border: 1px solid @surface0;
-    color: @text;
+  background-color: @base;
+  padding: 5px 3px;
+  margin: 0 0 0 12px;
+  border-radius: 18px;
+  border: 1px solid @surface0;
+  color: @text;
 }
 
 #workspaces button {
-    padding: 0 6px;
-    margin: 0 3px;
-    border-radius: 50px;
-    color: @base;
-    background-color: @surface0;
-    min-width: 20px;
-    transition: all 0.3s ease-in-out;
+  padding: 0 6px;
+  margin: 0 3px;
+  border-radius: 50px;
+  color: @base;
+  background-color: @surface0;
+  min-width: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: @mauve;
-    color: @base;
-    min-width: 35px;
-    transition: all 0.3s ease-in-out;
+  background-color: @mauve;
+  color: @base;
+  min-width: 35px;
+  transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
-    background: @lavender;
-    color: @base;
-    border-radius: 16px;
-    min-width: 35px;
-    background-size: 400% 400%;
+  background: @lavender;
+  color: @base;
+  border-radius: 16px;
+  min-width: 35px;
+  background-size: 400% 400%;
 }
 
 #workspaces button.urgent {
-    background: @red;
-    color: @base;
-    border-radius: 16px;
-    min-width: 35px;
-    background-size: 400% 400%;
-    transition: all 0.3s ease-in-out;
+  background: @red;
+  color: @base;
+  border-radius: 16px;
+  min-width: 35px;
+  background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
 }
 
 #clock,
@@ -76,30 +76,30 @@ tooltip label {
 #network,
 #battery,
 #custom-notification {
-    background-color: @base;
-    padding: 0 15px 0 15px;
-    margin: 0 0 0 10px;
-    border-radius: 50px;
-    border: 1px solid @surface0;
+  background-color: @base;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 10px;
+  border-radius: 50px;
+  border: 1px solid @surface0;
 }
 
 #clock {
-    color: @mauve;
+  color: @mauve;
 }
 
 #pulseaudio {
-    color: @yellow;
+  color: @yellow;
 }
 
 #network {
-    color: @peach;
+  color: @peach;
 }
 
 #battery {
-    color: @green;
+  color: @green;
 }
 
 #custom-notification {
-    color: @mauve;
-    margin-right: 10px;
+  color: @mauve;
+  margin-right: 10px;
 }

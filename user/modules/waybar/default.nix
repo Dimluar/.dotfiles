@@ -1,9 +1,9 @@
 {
-    programs.waybar.enable = true;
+  programs.waybar.enable = true;
 
-    home.file.".config/waybar/" = {
-        enable    = true;
-        source    = ./waybar;
-        recursive = true;
-    };
+  home.file.".config/waybar/" = {
+    enable = true;
+    source = ./waybar;
+    recursive = true;
+  };
 }

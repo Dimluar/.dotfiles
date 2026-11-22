@@ -1,9 +1,9 @@
 {
-    services.swaync.enable = true;
+  services.swaync.enable = true;
 
-    home.file.".config/swaync/" = {
-        enable    = true;
-        source    = ./swaync;
-        recursive = true;
-    };
+  home.file.".config/swaync/" = {
+    enable = true;
+    source = ./swaync;
+    recursive = true;
+  };
 }

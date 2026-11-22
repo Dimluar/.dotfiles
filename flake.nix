@@ -1,5 +1,4 @@
 {
-
   description = "System Configuration";
 
   inputs = {
@@ -9,24 +8,22 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }:
-    let
-      lib = nixpkgs.lib;
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in {
+  let
+    lib = nixpkgs.lib;
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
     nixosConfigurations = {
       morrowind = lib.nixosSystem {
-	inherit system;
+        inherit system;
         modules = [ ./system/configuration.nix ];
       };
     };
-
     homeConfigurations = {
       dimu = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	modules = [ ./user/home.nix ];
+        modules = [ ./user/home.nix ];
       };
     };
   };
-  
 }
