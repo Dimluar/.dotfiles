@@ -1,8 +1,8 @@
 local fn = require("functions")
 
-vim.keymap.set("i", "jf", "<Esc>", { desc = "Exit from insert mode" })
+vim.keymap.set({ "i", "v" }, "fj", "<Esc>", { desc = "Exit from insert mode" })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
-vim.keymap.set("t", "jf", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
+vim.keymap.set("t", "fj", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
 
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left conserving selection" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right conserving selection" })
