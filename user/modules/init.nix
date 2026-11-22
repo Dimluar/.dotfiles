@@ -7,5 +7,6 @@
     ./kitty.nix
     ./zsh.nix
     ./gtk.nix
+    ./nvim
   ];
 }

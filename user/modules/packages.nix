@@ -1,12 +1,11 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    neovim
     fastfetch
-    tree-sitter
     gcc
     gnumake
     killall
     zathura
     telegram-desktop
+    tree
   ];
 }

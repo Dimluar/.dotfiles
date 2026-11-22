@@ -25,7 +25,6 @@
         syntaxHighlighting.enable = true;
 
         shellAliases = {
-            vi = "nvim";
             hms = "home-manager switch --flake ~/.dotfiles";
             nrs = "sudo nixos-rebuild switch --flake ~/.dotfiles";
         };
