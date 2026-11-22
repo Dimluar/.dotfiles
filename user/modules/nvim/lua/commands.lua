@@ -13,8 +13,9 @@ vim.api.nvim_create_user_command(
     "Align",
     function(opts) fn.align(opts) end,
     {
-      desc = "Align equal signs on selected lines",
+      desc = "Align instances of a given sign in each line to the same col value",
       range = true,
+      nargs = 1,
     }
   )
 

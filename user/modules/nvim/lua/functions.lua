@@ -25,12 +25,13 @@ local M = {
     vim.cmd(mode .. " term " .. opts.args)
   end,
 
-  ---Aling equals on selected lines
+  ---Aling sign on selected lines
   ---@param opts table
   align = function(opts)
     if opts.range > 0 then
       local range = opts.line1 .. "," .. opts.line2
-      local command = " !column -t -s= -o="
+      local sign = opts.args
+      local command = " !column -t -s" .. sign .. " -o" .. sign
       vim.cmd(range .. command)
     end
   end,

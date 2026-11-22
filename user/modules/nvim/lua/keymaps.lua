@@ -25,4 +25,5 @@ vim.keymap.set("n", "<leader>cr", "<cmd>restart<cr>", { desc = "Reload config" }
 vim.keymap.set("n", "<leader><leader>s", "<cmd>Split<cr>", { desc = "Split" })
 vim.keymap.set("n", "<leader><leader>t", "<cmd>Terminal<cr>", { desc = "Terminal" })
 vim.keymap.set("n", "<leader><leader>c", ":Compile ", { desc = "Compile" })
-vim.keymap.set("v", "<leader><leader>=", ":Align<cr>", { desc = "Align" })
+vim.keymap.set("v", "<leader><leader>=", ":Align =<cr>", { desc = "Align to =" })
+vim.keymap.set("v", "<leader><leader>a", ":Align ", { desc = "Align" })
