@@ -48,4 +48,4 @@ vim.opt.undofile = true
 vim.opt.undodir  = vim.fn.stdpath("data") .. "/undo-dir"
 
 -- Clipboard
-vim.opt.clipboard = "unnamed"
+vim.opt.clipboard:append("unnamedplus")

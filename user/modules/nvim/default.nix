@@ -8,10 +8,11 @@
   ];
 
   programs.neovim = {
-    enable        = true;
-    viAlias       = true;
-    defaultEditor = true;
-    withPython3   = true;
+    enable         = true;
+    viAlias        = true;
+    defaultEditor  = true;
+    waylandSupport = true;
+    withPython3    = true;
 
     initLua = lib.mkMerge [
       ""
