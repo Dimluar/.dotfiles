@@ -17,6 +17,5 @@ which_key.add({
 which_key.add({
   { "<leader>f", group = "Find" },
   { "<leader>g", group = "Git" },
-  { "<leader><leader>", group = "Command", icon = "", mode = { "n", "v" }},
-  { "<leader>c", group = "Config", icon = "" },
+  { "<leader>c", group = "Command", icon = "", mode = { "n", "v" }},
 })

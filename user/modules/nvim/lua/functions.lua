@@ -1,6 +1,3 @@
-local config_path = os.getenv("HOME") .. "/.config/nvim/"
-local config_file = config_path .. "init.lua"
-
 local M = {
   ---Returns the mode to split viewport on depending on its ratio
   ---@return string mode Returns "vertical" if the viewport is wider than taller and "horizontal" otherwise
@@ -34,12 +31,6 @@ local M = {
       local command = " !column -t -s" .. sign .. " -o" .. sign
       vim.cmd(range .. command)
     end
-  end,
-
-  ---Opens init.lua with nvim directory as pwd
-  open_config = function()
-    vim.cmd("cd " .. config_path)
-    vim.cmd("e " .. config_file)
   end,
 
   ---Splits current buffer dynamically depending on mode

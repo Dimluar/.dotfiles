@@ -1,5 +1,3 @@
-local fn = require("functions")
-
 vim.keymap.set({ "i", "v" }, "fj", "<Esc>", { desc = "Exit from insert mode" })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
 vim.keymap.set("t", "fj", "<C-\\><C-n>", { desc = "Exit from terminal mode" })
@@ -18,12 +16,9 @@ vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Exit" })
 
 vim.keymap.set("n", "-", "<cmd>Ex<cr>", { desc = "Open file tree" })
 
-vim.keymap.set("n", "<leader>co", fn.open_config, { desc = "Open init.lua" })
-vim.keymap.set("n", "<leader>cr", "<cmd>restart<cr>", { desc = "Reload config" })
-
 -- User commands
-vim.keymap.set("n", "<leader><leader>s", "<cmd>Split<cr>", { desc = "Split" })
-vim.keymap.set("n", "<leader><leader>t", "<cmd>Terminal<cr>", { desc = "Terminal" })
-vim.keymap.set("n", "<leader><leader>c", ":Compile ", { desc = "Compile" })
-vim.keymap.set("v", "<leader><leader>=", ":Align =<cr>", { desc = "Align to =" })
-vim.keymap.set("v", "<leader><leader>a", ":Align ", { desc = "Align" })
+vim.keymap.set("n", "<leader>cs", "<cmd>Split<cr>", { desc = "Split" })
+vim.keymap.set("n", "<leader>ct", "<cmd>Terminal<cr>", { desc = "Terminal" })
+vim.keymap.set("n", "<leader>cc", ":Compile ", { desc = "Compile" })
+vim.keymap.set("v", "<leader>c=", ":Align =<cr>", { desc = "Align to =" })
+vim.keymap.set("v", "<leader>ca", ":Align ", { desc = "Align" })
