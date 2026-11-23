@@ -16,6 +16,11 @@ vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Exit" })
 
 vim.keymap.set("n", "-", "<cmd>Ex<cr>", { desc = "Open file tree" })
 
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Change focus right" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Change focus down" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Change focus up" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Change focus left" })
+
 -- User commands
 vim.keymap.set("n", "<leader>cs", "<cmd>Split<cr>", { desc = "Split" })
 vim.keymap.set("n", "<leader>ct", "<cmd>Terminal<cr>", { desc = "Terminal" })
