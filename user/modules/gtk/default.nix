@@ -8,5 +8,10 @@
         accent = "mauve";
       };
     };
+    cursorTheme = {
+      name = "Catppuccin Mocha Mauve";
+      size = 24;
+      package = pkgs.catppuccin-cursors.mochaMauve;
+    };
   };
 }
