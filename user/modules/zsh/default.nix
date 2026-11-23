@@ -9,6 +9,8 @@
     };
 
     initContent = ''
+      export PATH=$HOME/.local/bin:$PATH
+
       function zle-keymap-select {
         echo -ne '\e[1 q'
       }
