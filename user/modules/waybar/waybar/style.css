@@ -42,9 +42,13 @@ tooltip label {
   margin: 0 3px;
   border-radius: 50px;
   color: @base;
-  background-color: @surface0;
+  background-color: @surface1;
   min-width: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.empty {
+  background-color: @surface0
 }
 
 #workspaces button.active {
